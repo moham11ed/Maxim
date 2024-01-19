@@ -1,0 +1,21 @@
+body{
+    background-color: #161515;
+}
+.container {
+    --padding: 2.5rem 0.3125rem;
+    --margin-top: 0;
+    --margin-bottom: 0;
+    margin-inline: auto;
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+    width: 100%;
+    padding: var(--padding);
+    text-align: center;
+}
+img
+{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}

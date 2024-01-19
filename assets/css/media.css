@@ -1,0 +1,149 @@
+/*^========> Container <========*/
+@media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-inline: 15px;
+    }
+  }
+  /*^========> Header <========*/
+@media screen and (min-width: 1200px) {
+  header {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .container {
+    flex-direction: row;
+  
+    height: 100vh;
+  }
+  header .container > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+  }
+  header .container > picture>img
+  {
+    justify-content: center;
+    width: 70%;
+  }
+  header .container > h1
+  {
+    margin-top: 50px;
+    width: 70%;
+  }
+ 
+}
+/*^========> Gallery <========*/
+@media screen and (max-width: 1400px) {
+  .gallery-photos {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-photos {
+    height: 845px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-photos {
+    height: 1405px;
+  }
+
+  .gallery-photos picture {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+
+  .gallery .pizza {
+    order: 1;
+  }
+  .gallery .feteer {
+    order: 2;
+  }
+  .gallery .pasta {
+    order: 4;
+  }
+  .gallery .Manakish {
+    order: 5;
+  }
+  .gallery .Crepe {
+    order: 3;
+  }
+  .gallery .coffee {
+    order: 6;
+  }
+  .gallery .Fresh-juice {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-photos {
+    height: auto;
+  }
+  .gallery-photos picture {
+    width: 100%;
+  }
+}
+/*^========> Footer <========*/
+
+@media screen and (max-width: 1200px) {
+  footer .container :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap)) / 2);
+    order: 1;
+  }
+
+  footer .container :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container :is(.about, .contact-details, .subscription) {
+    width: 100%;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .sunscription-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
